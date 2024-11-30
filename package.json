@@ -1,5 +1,6 @@
 {
   "name": "facebook_clone",
+  "description": "A simple Facebook clone built with React, Next.js, and Tailwind CSS. It demonstrates user authentication, profile management, and dynamic news feed functionality.",
   "version": "0.1.0",
   "private": true,
   "scripts": {
