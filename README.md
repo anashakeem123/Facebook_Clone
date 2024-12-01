@@ -1,6 +1,6 @@
-## Facebook Clone 👥🌍
+# Facebook Clone 👥🌍
 
-# Welcome to the **Facebook Clone** project! 🚀 This project replicates the look and feel of Facebook with features like login, sign-up, and a simple news feed. It’s built using **React**, **Next.js**, and **Tailwind CSS**.
+## Welcome to the **Facebook Clone** project! 🚀 This project replicates the look and feel of Facebook with features like login, sign-up, and a simple news feed. It’s built using **React**, **Next.js**, and **Tailwind CSS**.
 
 ---
 
@@ -17,7 +17,7 @@
 ### Screenshots 📸
 
 
-![Screenshot (1790)](https://github.com/user-attachments/assets/5e0444bd-0796-45aa-83d4-d445a06d4915)
+![Facebook clone](https://github.com/user-attachments/assets/1cc2442a-1bb5-4bb6-9875-dce239e184de)
 
 
 ### Installation Steps 💻
