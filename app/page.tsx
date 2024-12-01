@@ -16,10 +16,36 @@ const Home = () => {
       {/* Dark Mode Toggle */}
       <button
         onClick={toggleDarkMode}
-        className="fixed top-4 right-4 bg-gray-200 text-black dark:bg-gray-800 dark:text-white p-2 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-110"
+        className="fixed top-1 right-2 bg-black  text-black  dark:text-white p-2 rounded-full shadow-md hover:shadow-xl transition duration-1000 ease-in-out transform hover:scale-110"
+       
       >
-        {darkMode ? 'Light Mode' : 'Dark Mode'}
+        {darkMode ? (
+          // Dark Mode Icon (Image for Light Mode)
+          <Image 
+            src="/sun.png" 
+            alt="Light Mode Icon"
+            width={30}
+            height={30}
+            className='bg-black rounded-3xl'
+          />
+        ) : (
+          // Light Mode Icon (Image for Dark Mode)
+          <Image 
+            src="/moon.png" 
+            alt="Dark Mode Icon"
+            width={30}
+            height={30}
+            className='bg-black rounded-2x1 '
+
+          />
+        )}
       </button>
+
+      {/* Main Heading */}
+      <div className="py-10 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 text-white text-center shadow-lg">
+        <h1 className="text-5xl font-extrabold mb-3 ">Welcome to Anas Hakeem&apos;s Facebook Clone</h1>
+        <p className="text-lg sm:text-xl font-medium">Experience the power of modern web development with a touch of creativity.</p>
+      </div>
 
       {/* Main Container */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between w-full max-w-6xl px-6 lg:px-0 py-8">
@@ -65,10 +91,15 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Create Page Section */}
-      <div className="text-center text-sm sm:text-base lg:text-lg mt-8 space-x-1">
-        <span className="font-bold text-blue-600 cursor-pointer hover:underline">Create a Page</span>
-        <span> to showcase your brand, talent, or business to the world.</span>
+      {/* Added Section: Features */}
+      <div className="py-12 text-black dark:bg-gray-100 text-center hover:bg-gray-800 hover:text-white">
+        <h2 className="text-3xl font-bold mb-6">Why Choose This Facebook Clone?</h2>
+        <ul className="space-y-4 text-lg">
+          <li>💡 <strong>Modern Design:</strong> Fully responsive and visually appealing layout.</li>
+          <li>⚡ <strong>Performance:</strong> Optimized for fast loading and smooth transitions.</li>
+          <li>🛠️ <strong>Features:</strong> Dark mode, user-friendly forms, and interactive buttons.</li>
+          <li>🚀 <strong>Built for Learning:</strong> Perfect for showcasing front-end skills and exploring new tech.</li>
+        </ul>
       </div>
 
       {/* Footer */}
@@ -120,18 +151,10 @@ const Home = () => {
                 <i className="fab fa-twitter fa-lg"></i>
               </a>
               <a href="#" className="hover:text-blue-500">
-                <i className="fab fa-instagram fa-lg"></i>
-              </a>
-              <a href="#" className="hover:text-blue-500">
                 <i className="fab fa-linkedin fa-lg"></i>
               </a>
             </div>
           </div>
-        </div>
-        <div className="border-t mt-6 py-6 text-center">
-          <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            © 2024 Facebook Clone. Built with ♥ by <strong>Anas Hakeem</strong> for learning and development purposes.
-          </p>
         </div>
       </footer>
     </div>
